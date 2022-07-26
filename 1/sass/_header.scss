@@ -37,3 +37,13 @@
 .content__navbar li a:hover {
     color: #22c55e;
 }
+
+$color3: (
+    primary:#449944,
+    secondary:red 
+ )
+
+
+h1{
+    color: map-get($color3, secondary);
+}

@@ -408,7 +408,7 @@ a {
 	background: #262626;
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1536px ) {
 
 header{
 	position: fixed;
@@ -522,11 +522,24 @@ background-image: url(images/Gente-Jugando.jpg);
 
 
 
+.background {
+	display: flex;
+	min-height: 100vh;
+  }
+  
+  .container {
+	flex: 0 1 700px;
+	margin: auto;
+	padding: 10px;
+  }
+  
+
 .screen {
 	position: relative;
 	background: #3e3e3e;
 	border-radius: 15px;
-  }
+   justify-content: centers;  
+}
   
   .screen:after {
 	content: '';
@@ -539,7 +552,8 @@ background-image: url(images/Gente-Jugando.jpg);
 	border-radius: 15px;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
 	z-index: -1;
-  }
+    justify-content: center;  
+}
   
   .screen-header {
 	display: flex;
@@ -548,7 +562,8 @@ background-image: url(images/Gente-Jugando.jpg);
 	background: #4d4d4f;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-  }
+      
+}
   
   .screen-header-left {
 	margin-right: auto;
@@ -561,7 +576,8 @@ background-image: url(images/Gente-Jugando.jpg);
 	margin-right: 3px;
 	border-radius: 8px;
 	background: white;
-  }
+  
+}
   
   .screen-header-button.close {
 	background: #ed1c6f;
@@ -576,8 +592,8 @@ background-image: url(images/Gente-Jugando.jpg);
   }
   
   .screen-header-right {
-	display: flex;
-  }
+	display: flex;       
+}
   
   .screen-header-ellipsis {
 	width: 3px;
@@ -585,11 +601,13 @@ background-image: url(images/Gente-Jugando.jpg);
 	margin-left: 2px;
 	border-radius: 8px;
 	background: #999;
-  }
+      
+}
   
   .screen-body {
 	display: flex;
-  }
+      
+}
   
   .screen-body-item {
 	flex: 1;
@@ -599,7 +617,8 @@ background-image: url(images/Gente-Jugando.jpg);
   .screen-body-item.left {
 	display: flex;
 	flex-direction: column;
-  }
+      
+}
   
   .app-title {
 	display: flex;
@@ -607,7 +626,8 @@ background-image: url(images/Gente-Jugando.jpg);
 	position: relative;
 	color: #ea1d6f;
 	font-size: 26px;
-  }
+     
+}
   
   .app-title:after {
 	content: '';
@@ -701,6 +721,7 @@ background-image: url(images/Gente-Jugando.jpg);
   @media screen and (max-width: 520px) {
 	.screen-body {
 	  flex-direction: column;
+	  
 	}
   
 	.screen-body-item.left {
